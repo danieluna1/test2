@@ -1,3 +1,4 @@
+<div class="container marketing">
 <p>products works!</p>
 
 <h2>Angular Display Data from Json File Example</h2>
@@ -20,3 +21,24 @@
     </tr>
   </tbody>
 </table>
+
+<table class="table table-striped">
+  <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of Products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.description }}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
